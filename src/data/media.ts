@@ -217,9 +217,9 @@ export const FILMS: Record<number, ArchivalFilm> = {
     caption: 'Archival footage of trading on the stock exchange.',
   },
   4: {
-    youtubeId: 'haVVWapm7Yw',
-    title: 'The agricultural depression',
-    caption: 'Archival footage on the hard times that hit American farms.',
+    youtubeId: 'LBiBcFNFdxg',
+    title: 'Farming in the 1920s & 1930s',
+    caption: 'Archival footage of American farm work in the years of falling crop prices and farm debt.',
   },
 };
 

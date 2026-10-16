@@ -3620,3 +3620,68 @@ kbd {
     height: 100%;
   }
 }
+
+/* ------------------------------------------------------------ WWI effect */
+.wwi-effect {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin: 14px 20px;
+  padding: 14px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-left: 6px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.wwi-effect-tag {
+  flex: none;
+  padding: 5px 11px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--text);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.wwi-effect p {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+@media (max-width: 640px) {
+  .wwi-effect {
+    flex-direction: column;
+    gap: 8px;
+    margin: 12px;
+  }
+}
+
+/* ------------------------------------------------------------ class + team */
+.title-team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.title-team-chip {
+  padding: 6px 16px;
+  border: 2px solid var(--text);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 0 var(--amber);
+}

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { exhibitById } from '../data/exhibits';
+import { exhibitById, WWI_EFFECTS } from '../data/exhibits';
 import { useMuseum } from '../state/MuseumContext';
 import {
   SECTIONS_REQUIRED,
@@ -173,6 +173,14 @@ export default function ExhibitScene({ exhibitId, onBackToHall }: Props) {
           </button>
         </div>
       </header>
+
+      {/* ---------------------------------------------------- WWI effect */}
+      {WWI_EFFECTS[exhibitId] && (
+        <aside className="wwi-effect" aria-label="Effect of World War I">
+          <span className="wwi-effect-tag">WWI Effect</span>
+          <p>{WWI_EFFECTS[exhibitId]}</p>
+        </aside>
+      )}
 
       {/* ---------------------------------------------------- the scene */}
       <div className="scene-wrap">

@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import Modal from './Modal';
+import { music } from '../audio/music';
 import type { ArchivalFilm } from '../data/media';
 
 interface Props {
@@ -12,6 +14,12 @@ interface Props {
  * off embedding.
  */
 export default function FilmModal({ film, onClose }: Props) {
+  // The film has its own soundtrack, so background music pauses while it is open.
+  useEffect(() => {
+    music.pause(true);
+    return () => music.pause(false);
+  }, []);
+
   const watchUrl = `https://www.youtube.com/watch?v=${encodeURIComponent(film.youtubeId)}`;
   const embedUrl = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(film.youtubeId)}?rel=0`;
 

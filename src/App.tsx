@@ -207,6 +207,13 @@ export default function App() {
           >
             {save.prefs.soundOn ? '🔊 Sound on' : '🔇 Sound off'}
           </button>
+          <button
+            className="btn btn-ghost btn-small"
+            onClick={() => updatePrefs({ musicOn: !save.prefs.musicOn })}
+            aria-pressed={save.prefs.musicOn}
+          >
+            {save.prefs.musicOn ? '♫ Music on' : '♫ Music off'}
+          </button>
         </div>
       </div>
 

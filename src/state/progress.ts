@@ -20,6 +20,8 @@ export interface ExhibitProgress {
 
 export interface Preferences {
   soundOn: boolean;
+  /** Background music; off until the visitor turns it on. */
+  musicOn: boolean;
   volume: number;
   reducedMotion: boolean;
   captionsOn: boolean;
@@ -62,7 +64,7 @@ export const freshSave = (): SaveData => ({
     6: emptyExhibit(),
   },
   evidence: [],
-  prefs: { soundOn: false, volume: 0.5, reducedMotion: false, captionsOn: true },
+  prefs: { soundOn: false, musicOn: false, volume: 0.5, reducedMotion: false, captionsOn: true },
   lastLocation: { kind: 'hall' },
   finalGameDone: false,
   plaquesRead: [],

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { sfx } from '../audio/sfx';
+import { music } from '../audio/music';
 
 interface Props {
   /**
@@ -60,7 +61,11 @@ export default function NarrationVideo({ src, exhibitTitle, onContinue }: Props)
   // Quiet the sound effects while narration plays.
   useEffect(() => {
     sfx.duck(playing);
-    return () => sfx.duck(false);
+    music.duck(playing);
+    return () => {
+      sfx.duck(false);
+      music.duck(false);
+    };
   }, [playing]);
 
   const media = found && found !== 'probing' ? found : null;

@@ -21,6 +21,10 @@ export default function TitleScreen({ hasSave, onBegin, onResume, onOpenReferenc
     <div className="title-screen">
       <div className="title-rays" aria-hidden="true" />
       <div className="title-inner">
+        <div className="title-team" aria-label="Class 11-1, Team A">
+          <span className="title-team-chip">Class 11-1</span>
+          <span className="title-team-chip">Team A</span>
+        </div>
         <span className="title-kicker">An interactive self-teaching museum</span>
         <h1 className="title-main">
           THE ROARING
@@ -86,6 +90,14 @@ export default function TitleScreen({ hasSave, onBegin, onResume, onOpenReferenc
               }}
             />
             Sound effects {save.prefs.soundOn ? 'on' : 'off'}
+          </label>
+          <label className="pref">
+            <input
+              type="checkbox"
+              checked={save.prefs.musicOn}
+              onChange={(e) => updatePrefs({ musicOn: e.target.checked })}
+            />
+            Background music {save.prefs.musicOn ? 'on' : 'off'}
           </label>
           <label className="pref">
             <input
@@ -173,10 +185,10 @@ export function HowToPlay({ onClose }: { onClose: () => void }) {
         </li>
       </ol>
       <p>
-        Exhibits 1 to 5 are open from the start and can be visited in any order, though the
-        numbers follow the story of the decade. Finishing a room earns an evidence card. Once all
-        five are done, Exhibit 6 opens, where the five cards answer the two Essential Questions.
-        Galleries, films and sound are optional and never block your progress.
+        All six exhibits are open from the start and can be visited in any order, though the
+        numbers follow the story of the decade. Finishing one of Exhibits 1–5 earns an evidence
+        card, and in Exhibit 6 the five cards answer the two Essential Questions. Galleries, films,
+        music and sound are optional and never block your progress.
       </p>
 
       <h3 className="mini-head">If something goes wrong</h3>
@@ -189,7 +201,7 @@ export function HowToPlay({ onClose }: { onClose: () => void }) {
           The museum runs without an internet connection. Only the outward links to archives need
           one.
         </li>
-        <li>Nothing plays sound until you turn it on, and narration never autoplays.</li>
+        <li>Nothing plays sound or music until you turn it on, and narration never autoplays.</li>
         <li>
           If the keyboard stops moving your character, click once on the hall and try again — closing
           a window returns control automatically.

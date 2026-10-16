@@ -85,6 +85,14 @@ Each exhibit's introduction shows an audio player when its file is present. `.m4
 `.wav` also work, and an `.mp4` video with the same name is used if there is no audio
 file. Visitors press play themselves; narration never starts on its own.
 
+### Background music (optional) → `public/media/music/`
+
+Visitors can turn background music on or off from the title screen or the **♫ Music**
+button in the top bar (it starts off). With nothing uploaded, the museum plays an original
+1920s-style piano tune generated in the browser. To use your own recording instead, upload
+it as `background.mp3`. It loops quietly, dips while narration plays and pauses while a
+film is open.
+
 ### Archival films
 
 The three archival films play from YouTube, so they need no upload. They are set in

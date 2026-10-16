@@ -18,6 +18,7 @@ import {
   type SaveData,
 } from './progress';
 import { sfx } from '../audio/sfx';
+import { music } from '../audio/music';
 import { exhibitById } from '../data/exhibits';
 
 interface MuseumAPI {
@@ -60,6 +61,11 @@ export function MuseumProvider({ children }: { children: ReactNode }) {
     sfx.setEnabled(save.prefs.soundOn);
     sfx.setVolume(save.prefs.volume);
   }, [save.prefs.soundOn, save.prefs.volume]);
+
+  useEffect(() => {
+    music.setVolume(save.prefs.volume);
+    music.setEnabled(save.prefs.musicOn);
+  }, [save.prefs.musicOn, save.prefs.volume]);
 
   useEffect(() => {
     document.documentElement.dataset.reducedMotion = save.prefs.reducedMotion ? 'on' : 'off';

@@ -495,3 +495,12 @@ export const FINAL_JUDGEMENT = {
   ],
   correct: 'B' as const,
 };
+
+/** How World War I shaped each exhibit's story, shown as a banner in Exhibits 1–5. */
+export const WWI_EFFECTS: Record<number, string> = {
+  1: 'After WWI, inflation and unemployment increased as the government reduced wartime spending and soldiers returned home looking for jobs.',
+  2: "WWI expanded American factories and industrial production, helping industries grow after the war. Henry Ford's assembly line made cars cheaper to produce, creating jobs and boosting the economy.",
+  3: 'WWI helped the U.S. become a major industrial power, and postwar economic growth encouraged Americans to buy new products and invest in stocks, contributing to the consumer boom and bull market.',
+  4: 'WWI increased industrial production, which helped cities and industries prosper during the 1920s, while many farmers struggled because wartime demand for crops fell after the war. Cars also helped suburbs grow.',
+  5: 'After WWI, farmers faced falling crop prices because European countries began producing more of their own food again, while urban workers benefited more from growing factories and consumer industries.',
+};

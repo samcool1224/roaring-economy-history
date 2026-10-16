@@ -1,14 +1,13 @@
-Narration videos for each exhibit's introduction. Name them exactly:
+Narration for each exhibit's introduction. Name the files exactly:
 
-  exhibit01-postwar.mp4
-  exhibit02-ford.mp4
-  exhibit03-credit.mp4
-  exhibit04-three-americas.mp4
-  exhibit05-two-lives.mp4
-  exhibit06-verdict.mp4
+  exhibit01-postwar.mp3
+  exhibit02-ford.mp3
+  exhibit03-credit.mp3
+  exhibit04-three-americas.mp3
+  exhibit05-two-lives.mp3
+  exhibit06-verdict.mp3
 
-MP4 with H.264 video plays in every browser. If a video shows a black box
-in Chrome or Firefox, it is probably HEVC (an iPhone default); re-export it
-as H.264 ("Most Compatible").
+MP3 is the expected format. .m4a and .wav also work, and an .mp4 video with
+the same name is used if no audio file is found.
 
-Any video that is missing is simply skipped: that exhibit opens without one.
+Any narration that is missing is simply skipped: that exhibit opens without it.

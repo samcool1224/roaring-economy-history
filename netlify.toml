@@ -1,0 +1,23 @@
+# Netlify configuration for THE ROARING ECONOMY
+# Used when you connect this repository to Netlify (Git-based deploys).
+# For a drag-and-drop deploy of the prebuilt dist/ folder this file is not needed.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# The museum is a single-page app: send unknown paths to index.html so a
+# refresh or a deep link never 404s.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Hashed asset filenames are safe to cache forever.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

@@ -59,7 +59,7 @@ export const EXHIBITS: ExhibitDef[] = [
     years: '1918–1921',
     objective:
       'Objective 1 — Describe the economic problems America faced after World War I.',
-    narrationVideo: 'media/narration/exhibit01-postwar.mp4',
+    narrationVideo: 'media/narration/exhibit01-postwar.mp3',
     narrationScript:
       'Welcome to the postwar newsroom. World War I has ended, but the American economy is facing inflation, unemployment, and a painful transition from war production to peace. Read the evidence, investigate the causes, and publish your explanation of the recession that came before the Roaring Twenties boom.',
     stations: [
@@ -133,7 +133,7 @@ export const EXHIBITS: ExhibitDef[] = [
     years: '1913–1927',
     objective:
       'Objective 2 — Explain the economic growth and prosperity of the 1920s, including how Henry Ford and the automobile industry helped spark the boom.',
-    narrationVideo: 'media/narration/exhibit02-ford.mp4',
+    narrationVideo: 'media/narration/exhibit02-ford.mp3',
     narrationScript:
       'Step onto Ford\'s factory floor. The moving automobile assembly line allowed specialized workers to build cars faster and helped lower costs. Make a Model T, compare production methods, and see how the auto industry created demand for steel, rubber, oil, glass, and roads.',
     stations: [
@@ -202,7 +202,7 @@ export const EXHIBITS: ExhibitDef[] = [
     years: '1922–1929',
     objective:
       'Objective 3 — Analyze the consumer revolution and the bull market of the 1920s.',
-    narrationVideo: 'media/narration/exhibit03-credit.mp4',
+    narrationVideo: 'media/narration/exhibit03-credit.mp3',
     narrationScript:
       'In the 1920s, advertising and consumer credit encouraged families to buy new goods. On Wall Street, share prices climbed and some investors borrowed to buy more stock. Visit the store, examine a real advertisement, then explore the exciting — but risky — world of the bull market.',
     stations: [
@@ -271,7 +271,7 @@ export const EXHIBITS: ExhibitDef[] = [
     years: '1920–1929',
     objective:
       'Objective 4 — Compare the different effects of the economic boom on urban, suburban, and rural America.',
-    narrationVideo: 'media/narration/exhibit04-three-americas.mp4',
+    narrationVideo: 'media/narration/exhibit04-three-americas.mp3',
     narrationScript:
       'One decade, three different Americas. Industry helped cities grow, automobiles supported new suburbs, and tractors changed farming. But the economic boom did not benefit every community in the same way. Change this map to discover how technology and geography shaped people\'s opportunities.',
     stations: [
@@ -340,7 +340,7 @@ export const EXHIBITS: ExhibitDef[] = [
     years: '1926',
     objective:
       'Objective 5 — Compare economic life in rural America to that in urban America.',
-    narrationVideo: 'media/narration/exhibit05-two-lives.mp4',
+    narrationVideo: 'media/narration/exhibit05-two-lives.mp3',
     narrationScript:
       'Did the boom reach every household? In the city, wages offered access to new goods but families faced bills and job insecurity. On farms, larger harvests could bring disappointing earnings when crop prices fell. Manage two fictional 1926 budgets and compare the choices and risks of urban and rural life.',
     stations: [
@@ -413,7 +413,7 @@ export const EXHIBITS: ExhibitDef[] = [
     years: '1919–1929',
     objective:
       'Synthesis — weigh all five exhibits against the two Essential Questions, then judge the boom and its risks.',
-    narrationVideo: 'media/narration/exhibit06-verdict.mp4',
+    narrationVideo: 'media/narration/exhibit06-verdict.mp3',
     narrationScript:
       "Welcome to the final Economic Council. You've seen war's aftermath, new factories, consumer credit, changing communities, and unequal prosperity. Now examine two essential questions: who gained freedom and opportunity, and how did technology reshape America? Use your evidence in one final stock-market challenge to judge the boom and its risks.",
     stations: [],

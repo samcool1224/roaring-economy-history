@@ -39,7 +39,7 @@ must be **public** for Pages to work.
 
 ---
 
-## Adding the photographs and narration videos
+## Adding the photographs and narration
 
 Every media file has a fixed name and folder. Add a file with the right name and the
 site picks it up automatically; leave one out and nothing breaks.
@@ -70,20 +70,20 @@ The extension can be `.jpg`, `.jpeg`, `.png`, `.webp` or `.gif`.
 The source page for each photograph is recorded in `src/data/media.ts` and credited in
 the site's References panel.
 
-### Narration videos → `public/media/narration/`
+### Narration audio → `public/media/narration/`
 
 | Filename | Exhibit |
 | --- | --- |
-| `exhibit01-postwar.mp4` | 1 — The Newsroom |
-| `exhibit02-ford.mp4` | 2 — Ford's Factory |
-| `exhibit03-credit.mp4` | 3 — The Credit Craze |
-| `exhibit04-three-americas.mp4` | 4 — Three Americas |
-| `exhibit05-two-lives.mp4` | 5 — Two American Lives |
-| `exhibit06-verdict.mp4` | 6 — The Economic Verdict |
+| `exhibit01-postwar.mp3` | 1 — The Newsroom |
+| `exhibit02-ford.mp3` | 2 — Ford's Factory |
+| `exhibit03-credit.mp3` | 3 — The Credit Craze |
+| `exhibit04-three-americas.mp3` | 4 — Three Americas |
+| `exhibit05-two-lives.mp3` | 5 — Two American Lives |
+| `exhibit06-verdict.mp3` | 6 — The Economic Verdict |
 
-Use MP4 with **H.264** video. iPhones record HEVC by default, which shows as a black box
-in some browsers; export as H.264 ("Most Compatible") if that happens. Keep each file
-under 100 MB, GitHub's per-file limit.
+Each exhibit's introduction shows an audio player when its file is present. `.m4a` and
+`.wav` also work, and an `.mp4` video with the same name is used if there is no audio
+file. Visitors press play themselves; narration never starts on its own.
 
 ### Archival films
 
@@ -160,4 +160,3 @@ than 15 million Model Ts built 1908–1927, with the price falling from $850 to 
 as $260; the 1920 census as the first with an urban majority; the 1920–21 recession
 coming before the boom; and the 1929 crash as one cause of the Depression, not the only
 one.
-# roaring-economy-history

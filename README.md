@@ -116,9 +116,8 @@ panel can mark exhibits complete for testing. Visitors never see this without th
                   ┌───── ENTRANCE HALL ─────┐
 ```
 
-Doors run **1 → 6 clockwise** around the rotunda. Exhibits 1–5 are open from the start
-and can be visited in any order; **Exhibit 6 opens once all five are finished**. Leaving
-an exhibit puts you back at its door.
+Doors run **1 → 6 clockwise** around the rotunda. **All six exhibits are open from the
+start** and can be visited in any order. Leaving an exhibit puts you back at its door.
 
 | Where | Controls |
 | --- | --- |

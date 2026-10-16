@@ -189,13 +189,11 @@ export function fiveComplete(data: SaveData): boolean {
 }
 
 /**
- * Exhibits 1–5 are open from the start and can be done in any order.
- * Exhibit 6, the Economic Council, opens once all five are finished.
+ * Every exhibit, including Exhibit 6 (the Economic Council), is open from the
+ * start and can be visited in any order, whatever has been completed.
  */
-export function isExhibitUnlocked(data: SaveData, id: number): boolean {
-  if (id >= 1 && id <= 5) return true;
-  if (id === 6) return fiveComplete(data);
-  return false;
+export function isExhibitUnlocked(_data: SaveData, id: number): boolean {
+  return id >= 1 && id <= 6;
 }
 
 export function completedCount(data: SaveData): number {

@@ -237,9 +237,7 @@ export default function CouncilScene({
                   A judgement without a source behind it is just an opinion. Click one card.
                 </p>
                 <div className="evidence-strip is-pickable">
-                  {save.evidence
-                    .filter((id) => id <= 5)
-                    .map((id) => (
+                  {[1, 2, 3, 4, 5].map((id) => (
                       <EvidenceCard
                         key={id}
                         exhibitId={id}

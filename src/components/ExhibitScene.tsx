@@ -278,7 +278,7 @@ export default function ExhibitScene({ exhibitId, onBackToHall }: Props) {
             <p className="room-complete-note">
               ✓ Exhibit complete
               {fiveComplete(save)
-                ? ' — all five exhibits are done, so the Economic Council is open.'
+                ? ' — all five exhibits are done, so every evidence card is ready for the Economic Council.'
                 : ' — evidence card collected.'}{' '}
               <button className="link-btn" onClick={() => setShowEvidence(true)}>
                 View your evidence card

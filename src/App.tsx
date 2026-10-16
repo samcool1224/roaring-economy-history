@@ -64,7 +64,7 @@ export default function App() {
     const finished = [1, 2, 3, 4, 5].filter((i) => save.exhibits[i]?.completed).length;
     setToast(
       fiveComplete(save)
-        ? 'All five exhibits complete — the Economic Council (Exhibit 6) is now open.'
+        ? 'All five exhibits complete — every evidence card is ready for the Economic Council (Exhibit 6).'
         : `Exhibit ${justCompleted} complete — evidence card ${finished} of 5 collected.`,
     );
     clearJustCompleted();
